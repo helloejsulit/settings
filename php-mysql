@@ -1,0 +1,12 @@
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+
+sudo apt install php7.3 php7.3-common php7.3-opcache php7.3-cli php7.3-gd php7.3-curl php7.3-mysql
+
+// https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/
+sudo apt update
+sudo apt install mysql-server
+
+// https://github.com/microsoft/WSL/issues/2113
+sudo usermod -d /var/lib/mysql/ mysql
+sudo service mysql start
